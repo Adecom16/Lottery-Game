@@ -11,7 +11,7 @@ inherits: false;
     , #21c9f8, #121836 43%, #4e00c2);
     text-align: center;
     /* width: 100%; */
-    height: 100vh;
+    height: 120vh;
     animation: spin 5s linear infinite;
     background-repeat: no-repeat;
 }
