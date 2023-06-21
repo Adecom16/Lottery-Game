@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="navbar">
+        <h1>predict and win</h1>
+        <h3>Lotto Game</h3>
+        
+    </div>
+    
+    <button type="button" id="btn"
+    onclick="document.getElementById('demo').innerHTML = 'Dear customer, kindly predict a number between 1-20, <br>and get a million naira and 2023 lexus jeep'">
+    How to play</button>
+    
+    <p  id="demo"></p>
+
+    <div class="sec">
+        <input type="text" id="tete" placeholder="Enter a number">
+        <button id="bttn" onclick="bet()">Play</button>
+    </div>
+    <p id="you"></p>
+    <p id="result"></p>
+
+    <script>
+        function bet(){
+            let  a=(Math.floor(Math.random() * 20)  )
+            console.log(a);
+            document.getElementById("you").innerHTML=a
+            
+        let life =document.getElementById("tete").value;
+        if(life === a){
+            document.getElementById("result").innerHTML="You Win 😊😎😉 "
+        }
+        else{
+            document.getElementById("result").innerHTML="You Lose 😢 Try next time"
+
+        }if  (life<=0 || life>=20){
+                document.getElementById("result").innerHTML="opps Wrong Number predit between 1-20😢"
+        }
+        }
+        // document.body.style.backgroundImage ="url('https://source.unsplash.com/1600x900/?" + name + "')";
+    </script>
+</body>
+</html>
