@@ -5,14 +5,14 @@ initial-value: 132deg;
 inherits: false;
 }
 
-.diva{
+:root{
     background-image: linear-gradient(
     var(--rotate)
     , #21c9f8, #121836 43%, #4e00c2);
     text-align: center;
     /* width: 100%; */
     height: 110vh;
-    animation: spin 5s linear infinite;
+/*     animation: spin 5s linear infinite; */
     background-repeat: no-repeat;
 }
 
