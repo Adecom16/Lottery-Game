@@ -5,7 +5,7 @@ initial-value: 132deg;
 inherits: false;
 }
 
-:root{
+.diva{
     background-image: linear-gradient(
     var(--rotate)
     , #21c9f8, #121836 43%, #4e00c2);
